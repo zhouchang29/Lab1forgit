@@ -68,7 +68,12 @@ class Tree {
  			CopyList.remove(presentNode);
  		}
 	}
-	
+
+	/** 查找桥接词
+	 *  @param word1 单词1
+	 *  @param word2 单词2
+	 *  @return 一句是否有桥接词的句子
+	 */
 	public String queryBridgeWords(String word1,String word2) {
 		String res = "";
 		TreeNodeList<TreeNode> retNodes = calculateBridge(word1,word2);
@@ -97,6 +102,10 @@ class Tree {
 		return res;
 	}
 	
+	/** 生成新文本
+	 *  @param inputText 输入的一段多个单词的字符串
+	 *  @return 增加桥接词后的字符串
+	 */
 	public String generateNewText(String inputText) {
 		String res = "",word1,word2;
 		String wordsStr = Lab1.replaceStr(inputText);
