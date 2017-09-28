@@ -7,6 +7,7 @@ import java.util.ArrayList;
  *
  */
 class TreeNode {
+	
 	String word;
 	int level;
 	TreeNodeList<TreeNode> parentList;
@@ -77,4 +78,5 @@ class TreeNode {
 	public int getNodeLevel() {
 		return this.level;
 	}
+
 }
