@@ -6,6 +6,7 @@ import java.util.ArrayList;
  * @author Yumi
  *
  */
+
 class TreeNode {
 	String word;
 	int level;
