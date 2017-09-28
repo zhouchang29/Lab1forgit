@@ -28,6 +28,7 @@ class TreeNodeList<E> extends ArrayList<E> implements Cloneable{
 		return existedNode;
 	}
 	
+	
 	/* 重写添加节点方法，在添加节点时计算最长单词长度
 	 * @see java.util.ArrayList#add(java.lang.Object)
 	 */
