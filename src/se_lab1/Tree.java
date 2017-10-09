@@ -5,7 +5,7 @@ import java.util.Random;
 
 /**
  * @author Yumi
- *
+ * Add some note
  */
 class Tree {
 	TreeNode head;
