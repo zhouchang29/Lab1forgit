@@ -44,6 +44,7 @@ public class Lab1 extends JComponent {
 	}
 	
 	/** 切割字符串
+	 * Add changes for C4 branch
 	 * @param str 读入的字符串
 	 * @return 切割后的String[]
 	 */

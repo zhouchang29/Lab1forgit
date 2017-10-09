@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /**
  * @author Yumi
- * Add some note
+ * Add changes for C4 branch
  */
 class TreeNode {
 	String word;
