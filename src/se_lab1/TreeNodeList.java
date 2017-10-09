@@ -8,6 +8,7 @@ import java.util.ArrayList;
 /** 继承原生ArrayList类添加自定义元素查找方法
  * @author Yumi
  * Add some note
+ * Add changes for B1 branch
  * @param <E> 内部添加的方法只对TreeNode对象集有效 
  */
 class TreeNodeList<E> extends ArrayList<E> implements Cloneable{

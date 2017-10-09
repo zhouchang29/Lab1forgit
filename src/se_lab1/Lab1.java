@@ -52,6 +52,7 @@ public class Lab1 extends JComponent {
 	}
 	
 	/** 处理读入的字符串(删除标点符号，并转换为小写)
+	 * Add changes for B1 branch
 	 * @param str 读入的字符串
 	 * @return 处理后的字符串
 	 */

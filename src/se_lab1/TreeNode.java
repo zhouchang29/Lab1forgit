@@ -5,6 +5,7 @@ import java.util.ArrayList;
 /**
  * @author Yumi
  * Add some note
+ * Add changes for B1 branch
  */
 class TreeNode {
 	String word;
