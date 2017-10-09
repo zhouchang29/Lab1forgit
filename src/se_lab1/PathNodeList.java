@@ -1,5 +1,5 @@
 /**
- * 
+ * Add some changes for B2 branch
  */
 package se_lab1;
 
