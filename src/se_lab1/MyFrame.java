@@ -1,6 +1,5 @@
 package se_lab1;
 
-
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Container;
@@ -12,6 +11,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
+
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -31,6 +31,12 @@ import javax.swing.border.LineBorder;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
 class MyFrame extends JFrame{
+
+
+	/**
+	 * 
+	 */
+
 	private static final long serialVersionUID = -6904245993409935448L;
 	private static final int WIDTH = 520;
 	private static final int HEIGHT = 550;
@@ -148,7 +154,7 @@ class shortestPanel extends JPanel {
 			public void actionPerformed(ActionEvent e) {
 				try {
 					pga = new PathGraphAssist(Lab1.t.TreeNodes);
-					String shortest = Lab1.t.calcShortestPath(tfWord1.getText(), tfWord2.getText(),pga);
+					String shortest = Lab1.calcShortestPath(Lab1.t,tfWord1.getText(), tfWord2.getText(),pga);
 					txRst.setText(shortest);
 					DirectedGraph.createShortestDirectedGraph(Lab1.t, Lab1.fileUrl, "Verdana", 12, shortest, pga);
 				} catch (CloneNotSupportedException e1) {
@@ -195,7 +201,7 @@ class queryBridgePanel extends JPanel {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				try {
-					lbRst.setText(Lab1.t.queryBridgeWords(tfWord1.getText(), tfWord2.getText()));
+					lbRst.setText(Lab1.queryBridgeWords(Lab1.t,tfWord1.getText(), tfWord2.getText()));
 				} catch (Exception err) {
 					
 				}
@@ -232,7 +238,7 @@ class randomPanel extends JPanel {
 
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				String random = Lab1.t.randomWalk();
+				String random = Lab1.randomWalk(Lab1.t);
 				lbRst.setText(random);
 				DirectedGraph.createRandomDirectedGraph(Lab1.t, Lab1.fileUrl, "Verdana", 12, random);
 			}
@@ -266,7 +272,7 @@ class newTextPanel extends JPanel {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				try {
-					lbRst.setText(Lab1.t.generateNewText(taText.getText()));
+					lbRst.setText(Lab1.generateNewText(Lab1.t,taText.getText()));
 				} catch (Exception err) {
 					
 				}

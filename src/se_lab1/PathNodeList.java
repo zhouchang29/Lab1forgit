@@ -1,6 +1,3 @@
-/**
- * 
- */
 package se_lab1;
 
 import java.util.ArrayList;
@@ -12,9 +9,6 @@ import java.util.ArrayList;
  */
 public class PathNodeList<E> extends ArrayList<E> {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = -1372237003015374659L;
 
 	public boolean push(E e) {
