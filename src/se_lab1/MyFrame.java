@@ -31,12 +31,6 @@ import javax.swing.border.LineBorder;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
 class MyFrame extends JFrame{
-
-
-	/**
-	 * 
-	 */
-
 	private static final long serialVersionUID = -6904245993409935448L;
 	private static final int WIDTH = 520;
 	private static final int HEIGHT = 550;

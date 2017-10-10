@@ -80,8 +80,5 @@ class TreeNode {
 	public int getNodeLevel() {
 		return this.level;
 	}
-<<<<<<< HEAD
 
-=======
->>>>>>> partner/master
 }

@@ -7,7 +7,6 @@ package se_lab1;
 import java.awt.*;
 import java.io.File;
 import java.io.FileNotFoundException;
-
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
@@ -25,7 +24,6 @@ public class Lab1 extends JComponent {
 	/** 从文本文档(txt)中读取单词
 	 *
 	 */
-	
 	public static void readInFile(){
 		File file = new File(fileUrl);
 		String wordsStr = "";
