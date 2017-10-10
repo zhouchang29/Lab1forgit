@@ -1,13 +1,12 @@
 /**
- * 
+ * ！！使用前须知！！ 本程序需要提前安装好Graphviz软件，并将程序所在安装目录下的bin文件夹加入到PATH环境变量中
+ *  后才能正常使用！！
  */
 package se_lab1;
 
 import java.awt.*;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.Random;
 import java.util.Scanner;
 
 import javax.swing.*;
@@ -19,7 +18,11 @@ public class Lab1 extends JComponent {
 	public static String[] words;
 	public static Tree t;
 	public static int imgState = 0;
-	
+
+	/** 从文本文档(txt)中读取单词
+	 *
+	 */
+
 	public static void readInFile(){
 		File file = new File(fileUrl);
 		String wordsStr = "";
@@ -246,5 +249,4 @@ public class Lab1 extends JComponent {
 		}
 		return ret;
 	}
-	
 }
